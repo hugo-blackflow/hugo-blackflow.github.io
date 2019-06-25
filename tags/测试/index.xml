@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>测试 on Hugo Theme - BlackFlow</title>
+    <link>https://hugo-blackflow.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
+    <description>Recent content in 测试 on Hugo Theme - BlackFlow</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright© Croxx. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 24 Jun 2019 14:14:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://hugo-blackflow.github.io/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Enm</title>
+      <link>https://hugo-blackflow.github.io/posts/enm.1/</link>
+      <pubDate>Mon, 24 Jun 2019 14:14:05 +0800</pubDate>
+      
+      <guid>https://hugo-blackflow.github.io/posts/enm.1/</guid>
+      <description>经济管理 01-概述 经济学： 经济问题：人类需求的无限性与经济资源的稀缺性的矛盾产物</description>
+    </item>
+    
+    <item>
+      <title>Enm</title>
+      <link>https://hugo-blackflow.github.io/posts/enm.2/</link>
+      <pubDate>Mon, 24 Jun 2019 14:14:05 +0800</pubDate>
+      
+      <guid>https://hugo-blackflow.github.io/posts/enm.2/</guid>
+      <description>经济管理 01-概述 经济学： 经济问题：人类需求的无限性与经济资源的稀缺性的矛盾产物</description>
+    </item>
+    
+    <item>
+      <title>Enm</title>
+      <link>https://hugo-blackflow.github.io/posts/enm/</link>
+      <pubDate>Mon, 24 Jun 2019 14:14:05 +0800</pubDate>
+      
+      <guid>https://hugo-blackflow.github.io/posts/enm/</guid>
+      <description>经济管理 01-概述 经济学： 经济问题：人类需求的无限性与经济资源的稀缺性的矛盾产物</description>
+    </item>
+    
+  </channel>
+</rss>
