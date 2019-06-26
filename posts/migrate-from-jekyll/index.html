@@ -413,7 +413,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 <div id="gitalk-container"></div>
 <script>
   var gitalk = new Gitalk({
-    id: md5(location.href),
+    id: md5(location.href).slice(16),
     clientID: '2e0f8f3c6e43d7554f1e',
     clientSecret: '17ca828f17eafa59907768c5988a01f05d915aec',
     repo: 'hugo-blackflow.github.io',
@@ -421,7 +421,6 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     admin: ['Hugo-BlackFlow'],
     distractionFreeMode: true
   })
-
   gitalk.render('gitalk-container')
 </script>
     
