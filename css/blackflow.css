@@ -1,5 +1,5 @@
 .header {
-  font-family: "Raleway", Helvetica, Arial, sans-serif
+  font-family: "Raleway", Helvetica, SimHei, STHeiti, Arial, sans-serif
 }
 
 a {
@@ -52,7 +52,7 @@ article > footer {
 }
 
 #menu .brand {
-  font-family: Raleway;
+  font-family: Raleway, SimHei, STHeiti;
   font-weight: bold;
   font-size: 1em;
   letter-spacing: 0.1em;
@@ -82,4 +82,20 @@ i {
 
 .pagination a {
   color: #265778;
+}
+
+.avator {
+  width: 128px;
+  height: auto;
+  display: block;
+  border-radius: 100%;
+  margin:auto;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  clear: both;
+  transition: all 0.5s;
+}
+.avator:hover{
+  transform: translateY(-10%);
+  cursor: pointer;
 }
