@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright© Croxx. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 24 Jun 2019 14:14:05 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hugo-blackflow.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,33 +19,6 @@
       
       <guid>https://hugo-blackflow.github.io/posts/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme.</description>
-    </item>
-    
-    <item>
-      <title>Enm</title>
-      <link>https://hugo-blackflow.github.io/posts/enm.1/</link>
-      <pubDate>Mon, 24 Jun 2019 14:14:05 +0800</pubDate>
-      
-      <guid>https://hugo-blackflow.github.io/posts/enm.1/</guid>
-      <description>经济管理 01-概述 经济学： 经济问题：人类需求的无限性与经济资源的稀缺性的矛盾产物</description>
-    </item>
-    
-    <item>
-      <title>Enm</title>
-      <link>https://hugo-blackflow.github.io/posts/enm.2/</link>
-      <pubDate>Mon, 24 Jun 2019 14:14:05 +0800</pubDate>
-      
-      <guid>https://hugo-blackflow.github.io/posts/enm.2/</guid>
-      <description>经济管理 01-概述 经济学： 经济问题：人类需求的无限性与经济资源的稀缺性的矛盾产物</description>
-    </item>
-    
-    <item>
-      <title>Enm</title>
-      <link>https://hugo-blackflow.github.io/posts/enm/</link>
-      <pubDate>Mon, 24 Jun 2019 14:14:05 +0800</pubDate>
-      
-      <guid>https://hugo-blackflow.github.io/posts/enm/</guid>
-      <description>经济管理 01-概述 经济学： 经济问题：人类需求的无限性与经济资源的稀缺性的矛盾产物</description>
     </item>
     
     <item>
