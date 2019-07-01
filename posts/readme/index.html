@@ -188,7 +188,7 @@
             
 
 <div class="header">
-    <h1>Getting Started with Hugo</h1>
+    <h1></h1>
     <h2></h2>
 </div>
 <div class="content">
@@ -197,125 +197,149 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>2014-04-02 00:00</time>
+    <time>0001-01-01 00:00</time>
   </div>
 
   
 
   
 
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://hugo-blackflow.github.io/tags/go">go</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://hugo-blackflow.github.io/tags/golang">golang</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://hugo-blackflow.github.io/tags/hugo">hugo</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://hugo-blackflow.github.io/tags/development">development</a>
-    
-  </div>
-  
   
 
 </div>
 
     
 
-<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+<h1 id="blackflow-hugo-theme">BlackFlow Hugo Theme</h1>
 
-<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
+<p>BlackFlow is a clear, responsive dark style theme with timeline and charts.</p>
 
-<p>Save it somewhere specific as we will be using it in the next step.</p>
+<p><em>This theme is referenced from <a href="https://github.com/yoshiharuyamashita/blackburn">blackburn</a> by <a href="https://github.com/yoshiharuyamashita">yoshiharuyamashita</a>.</em></p>
 
-<p>More complete instructions are available at <a href="/overview/installing/">installing hugo</a></p>
+<p><img src="https://raw.githubusercontent.com/mrcroxx/hugo-blackflow/master/images/screenshot.png" alt="screenshot" /></p>
 
-<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
+<h2 id="demo">Demo</h2>
 
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
+<p>You can reach a live <a href="https://hugo-blackflow.github.io">Demo</a> here which contains official documents from <a href="https://gohugo.io/">Hugo</a> and some other documents about this theme.</p>
 
-<p>Follow the following steps:</p>
+<h2 id="features">Features</h2>
+
+<ul>
+<li>A clear chart for counting posts and words on index page.</li>
+<li>A clear sidebar with category links and social links.</li>
+<li>Timeline organized posts and categories lists.</li>
+<li>Automatic code highlighting supported by <a href="https://highlightjs.org/">highlight.js</a>.</li>
+<li>Latex language supported by <a href="https://katex.org/">KaTeX</a>.</li>
+<li>Charting supported by <a href="https://www.chartjs.org/">ChartJS</a>.</li>
+<li>Comment system supported by <a href="https://github.com/gitalk/gitalk">Gitalk</a>.</li>
+<li>&hellip;</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
 
 <ol>
-<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to <a href="http://localhost:1313">http://localhost:1313</a></li>
+<li>Clone this repository to your hugo theme directory.</li>
 </ol>
 
-<p>Corresponding pseudo commands:</p>
-
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
+<pre><code class="language-bash">cd /path/to/your/hugo/site/
+git submodule add https://github.com/mrcroxx/hugo-blackflow.git themes/blackflow
 </code></pre>
 
-<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+<ol>
+<li>Switch your theme to <em>BlackFlow</em> in your <em>config.toml</em>.</li>
+</ol>
 
-<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
-
-<p>Stop the Hugo process by hitting ctrl+c.</p>
-
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
+<pre><code class="language-toml">theme = &quot;blackflow&quot;
 </code></pre>
 
-<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+<ol>
+<li>Customize your site.</li>
+</ol>
 
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
+<p>For more information read <a href="#site-configuration">Site Configuration</a>.</p>
 
-<p>Change and save this file.. Notice what happened in your terminal.</p>
+<h2 id="site-configuration-a-name-site-configuration-a">Site Configuration<a name="site-configuration"></a></h2>
 
-<pre><code>&gt; Change detected, rebuilding site
+<p>Take a look in the <code>exampleSite</code> folder first.</p>
 
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
+<h3 id="length-of-the-summary">Length of the summary</h3>
+
+<p>When using a language other than English (like Chinese), make sure of adding the config below to make the length of summaries right.</p>
+
+<pre><code class="language-toml">summaryLength = 40
+hasCJKLanguage = true
 </code></pre>
 
-<p>Refresh the browser and observe that the typo is now fixed.</p>
+<h3 id="menu">Menu</h3>
 
-<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
+<p>Take a look at the <code>config.toml</code> file in the <code>exampleSite</code> folder.</p>
 
-<h2 id="step-4-have-fun">Step 4. Have fun</h2>
+<p>The icon of menu items can be customized by parameter <code>pre</code> with <a href="https://fontawesome.com/">Font-Awesome</a>.</p>
 
-<p>The best way to learn something is to play with it.</p>
+<h3 id="social-link">Social Link</h3>
+
+<p>See <code>layouts/partials/social.html</code> for more information.</p>
+
+<h3 id="site-parameters">Site Parameters</h3>
+
+<pre><code class="language-toml">[params]
+    brand = &quot;BlackFlow&quot; # Showed at the top of the sidebar.
+    subtitle = &quot;A brief black style Hugo theme.&quot;
+    dateformat = &quot;2006-01-02 15:04&quot;
+    math = true # Turn KaTeX support on.
+    max_taxonomy_terms = 3 # Limit posts showed below tags or topics.
+    highlightjs = &quot;androidstudio&quot; # Customize the theme of highlightjs.
+    highlightjs_extra_languages = [&quot;yaml&quot;,&quot;kotlin&quot;] # Add extra languages support.
+    comment_system = &quot;gitalk&quot; # Turn Gitalk support on.
+    comment_system_client_id = &quot;xxx&quot; 
+    comment_system_client_secret = &quot;xxx&quot;
+    comment_system_owner = &quot;xxx&quot;
+    comment_system_repo = &quot;xxx&quot;
+</code></pre>
+
+<h2 id="use-chartjs-in-posts">Use ChartJS in Posts</h2>
+
+<p>The post page does not load <code>ChartJS</code> by default. You can turn it on by adding <code>&quot;ChartJS&quot;</code> to the <code>include</code> parameter of the markdown file.</p>
+
+<pre><code class="language-toml">+++
+title = &quot;xxx&quot;
+# ... ...
+include = [&quot;ChartJS&quot;]
++++
+</code></pre>
+
+<h2 id="content-suggestions">Content Suggestions</h2>
+
+<ul>
+<li>Keep blog posts in <code>content/posts</code> directory.</li>
+<li>Use <code>tags</code> and <code>topics</code> as taxonomies.</li>
+</ul>
+
+<h2 id="more-screenshots">More Screenshots</h2>
+
+<h3 id="index-page">Index Page</h3>
+
+<p><img src="https://raw.githubusercontent.com/mrcroxx/hugo-blackflow/master/images/screenshot-index.png" alt="Index Page" /></p>
+
+<h3 id="posts-page">Posts Page</h3>
+
+<p><img src="https://raw.githubusercontent.com/mrcroxx/hugo-blackflow/master/images/screenshot-posts.png" alt="Posts Page" /></p>
+
+<h3 id="katex-chartjs">KaTeX &amp; ChartJS</h3>
+
+<p><img src="https://raw.githubusercontent.com/mrcroxx/hugo-blackflow/master/images/screenshot-katex-chartjs.png" alt="KaTeX &amp; ChartJS" /></p>
+
+<h3 id="404-page">404 Page</h3>
+
+<p><img src="https://raw.githubusercontent.com/mrcroxx/hugo-blackflow/master/images/screenshot-404.png" alt="404 Page" /></p>
 
 
     
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://hugo-blackflow.github.io/posts/readme/"><i class="fa fa-chevron-left"></i></a>
-    
   </div>
   <div class="pure-u-10-24">
-    
-    <nav class="prev">
-      <a href="https://hugo-blackflow.github.io/posts/readme/"></a>
-    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -324,13 +348,13 @@ Having nearly instant feedback enables you to have your creativity flow without 
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://hugo-blackflow.github.io/posts/goisforlovers/">(Hu)go Template Primer</a>
+      <a href="https://hugo-blackflow.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://hugo-blackflow.github.io/posts/goisforlovers/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://hugo-blackflow.github.io/posts/hugoisforlovers/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

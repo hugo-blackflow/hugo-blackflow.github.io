@@ -6,8 +6,8 @@
     <description>Recent content on Hugo Theme - BlackFlow</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Copyright© Hugo-BlackFlow. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2019. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 01 Jul 2019 16:10:09 +0800</lastBuildDate>
     
 	<atom:link href="https://hugo-blackflow.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,24 @@
       
       <guid>https://hugo-blackflow.github.io/posts/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://hugo-blackflow.github.io/posts/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://hugo-blackflow.github.io/posts/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like</description>
+    </item>
+    
+    <item>
+      <title>Demo of KaTeX &amp; ChartJS</title>
+      <link>https://hugo-blackflow.github.io/posts/demo-of-katex-chartjs/</link>
+      <pubDate>Mon, 01 Jul 2019 16:10:09 +0800</pubDate>
+      
+      <guid>https://hugo-blackflow.github.io/posts/demo-of-katex-chartjs/</guid>
+      <description>LCS Function Defined $$\text{LCS}(X _i,Y _j)=\begin{cases} \emptyset &amp;amp; \text{if } i=0 \text{ or } j=0 \\ \text{LCS}(X _{i-1},Y _{j-1}) \hat{\text{ }} x _i &amp;amp; \text{if }i,j&amp;gt;0 \text{ and } x _i = y _i \\ max \text{\textbraceleft} \text{LCS}(X _i,Y _{j-1}, \text{LCS}(X _{i-1},Y _j)\text{\textbraceright} &amp;amp; \text{if } j&amp;gt;0 \text{ and } x _i \ne y _j \end{cases}$$</description>
     </item>
     
     <item>
@@ -42,12 +60,14 @@ More complete instructions are available at installing hugo</description>
     </item>
     
     <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://hugo-blackflow.github.io/posts/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>https://hugo-blackflow.github.io/posts/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://hugo-blackflow.github.io/posts/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like</description>
+      <guid>https://hugo-blackflow.github.io/posts/readme/</guid>
+      <description>BlackFlow Hugo Theme BlackFlow is a clear, responsive dark style theme with timeline and charts.
+This theme is referenced from blackburn by yoshiharuyamashita.
+Demo You can reach a live Demo here which contains official documents from Hugo and some other documents about this theme.</description>
     </item>
     
   </channel>
